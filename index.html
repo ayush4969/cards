@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            flex-direction: column;
+            border: 2px solid black;
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 50%, #ffffff 100%);
+
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            box-shadow: 15px 15px 15px gray;
+            text-align: center;
+        }
+
+        #card1 {
+            background-color: rgb(0, 99, 94);
+            border-radius: 15px;
+            width: 300px;
+            padding: 25px;
+            color: white;
+        }
+
+        #qrimage {
+            width: 250px;
+            height: 250px;
+            border-radius: 15px;
+        }
+
+        #card2 {
+            width: 300px;
+            border-radius: 15px;
+            background-color: white;
+            padding: 0px 20px 20px 20px;
+        }
+
+        #card2img {
+            width: 300px;
+            height: 150px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px; 
+            object-fit: cover;          
+        }
+
+        #plan {
+            background-color: #bde8ee;
+            border-radius: 10px;
+            padding: 7px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #planleft {
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+        }
+
+        #musiclogo {
+            width: 30px;
+        }
+
+        .button {
+            cursor: pointer;
+            width: 100%;
+            height: 50px;
+            background-color: rgb(11, 10, 71);
+            border-radius: 10px;
+            color: white;
+            box-shadow: 10px 15px 15px gray;
+        }
+
+        #cancel {
+            text-decoration: none;
+            color: black;
+        }
+
+        #card3 {
+            display: flex;
+            background-color: rgb(71, 8, 71);
+            color: white;
+            margin: 20px;
+            width: 700px;
+            box-shadow: 15px 15px 15px gray;
+            border-radius: 15px;
+        }
+
+        #card3left {
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #stats {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        #card3img {
+            width: 50%;
+            height: 350px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            object-fit: cover;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="card" id="card1">
+            <img id="qrimage" src="qr.png" alt="qr_code">
+
+            <br/>
+
+            <h2>Improve your front end skills by building projects</h2>
+
+            <br/>
+
+            <p>Scan the QR code to visit wikipedia.com and take you coding skill to next level</p>
+
+        </div>
+
+        <div class="card" id="card2">
+
+            <img id="card2img" src="card2img.jpg" alt="card2img"><br/>
+
+            <h3>Order Summary</h3><br/>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo facilis, nemo amet officia quod laborum expedita at doloribus.</p><br/>
+
+            <div id="plan">
+
+                <div id="planleft">
+
+                    <img id="musiclogo" src="musiclogo.png" alt="musiclogo">
+
+                    <p>Annual Plan<br/>$99.9/year</p>
+
+                </div>
+
+                <a href="#">Change</a>
+
+            </div><br/>
+
+            <button class="button" id="card2proceed">Proceed to Payment</button><br/>
+            <a id="cancel" href="#">Cancel Order</a>
+
+            
+
+        </div>
+
+        <div id="card3">
+
+            <div id="card3left">
+
+                <h2>Get insights that help you business grow</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore necessitatibus modi fugit tempora, provident animi omnis, sunt officia odio reprehenderit atque suscipit tenetur autem veritatis.</p>
+
+                <div id="stats">
+
+                    <div id="stat1">
+                        <h3>10K+</h3>
+                        <p>Comments</p>
+                    </div>
+
+                    <div id="stat2">
+                        <h3>214</h3>
+                        <p>Paid Users</p>
+                    </div>
+
+                    <div id="stat3">
+                        <h3>12M+</h3>
+                        <p>Views</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <img id="card3img" src="card2img.jpg" alt="random">
+
+        </div>
+
+    </div>
+
+</body>
+</html>
